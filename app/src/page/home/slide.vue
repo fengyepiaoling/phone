@@ -44,4 +44,6 @@
 <style scoped lang="stylus" rel="stylesheet/stylus">
   .slide-group
     height 120px
+    width 100%
+    overflow hidden
 </style>
