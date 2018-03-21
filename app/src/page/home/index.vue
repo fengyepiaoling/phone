@@ -1,23 +1,22 @@
 <template>
   <cube-page>
-    <div slot="content">
+    <div slot="content" class="form-group">
       <search-option></search-option>
+      <slide></slide>
     </div>
+
   </cube-page>
 </template>
 
 <script type="text/ecmascript-6">
   import CubePage from '@/components/ui/cube-page.vue'
   import SearchOption from '@/components/form/search-option.vue'
+  import Slide from './slide.vue'
   export default {
     components: {
       CubePage,
-      SearchOption
+      SearchOption,
+      Slide
     }
   }
 </script>
-
-<style lang="stylus" rel="stylesheet/stylus">
-.aaa
-  color $c-orange
-</style>

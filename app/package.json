@@ -23,7 +23,6 @@
     }
   },
   "dependencies": {
-    "amfe-flexible": "^2.2.1",
     "cube-ui": "^1.6.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
