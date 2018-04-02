@@ -3,6 +3,7 @@
     <div slot="content" class="form-group">
       <search-option></search-option>
       <slide></slide>
+      <list-commodity></list-commodity>
     </div>
 
   </cube-page>
@@ -11,12 +12,14 @@
 <script type="text/ecmascript-6">
   import CubePage from '@/components/ui/cube-page.vue'
   import SearchOption from '@/components/form/search-option.vue'
+  import ListCommodity from '@/components/page/list-commodity.vue'
   import Slide from './slide.vue'
   export default {
     components: {
       CubePage,
       SearchOption,
-      Slide
+      Slide,
+      ListCommodity
     }
   }
 </script>

@@ -3,7 +3,7 @@
     <cube-slide ref="slide" :data="items" @change="changePage">
       <cube-slide-item v-for="(item, index) in items" :key="index" @click.native="clickHandler(item, index)">
         <a :href="item.url">
-          <img :src="item.image">
+          <img :src="item.image" class="ts-img">
         </a>
       </cube-slide-item>
     </cube-slide>
@@ -16,16 +16,12 @@
       return {
         items: [
           {
-            url: 'http://www.baidu.com/',
-            image: '//webapp.didistatic.com/static/webapp/shield/cube-ui-examples-slide01.png'
+            url: '#',
+            image: require('@/_cache/home/2018-04-02_215837.png')
           },
           {
-            url: 'http://www.baidu.com/',
-            image: '//webapp.didistatic.com/static/webapp/shield/cube-ui-examples-slide02.png'
-          },
-          {
-            url: 'http://www.baidu.com/',
-            image: '//webapp.didistatic.com/static/webapp/shield/cube-ui-examples-slide03.png'
+            url: '#',
+            image: require('@/_cache/home/2018-04-02_215837.png')
           }
         ]
       }
@@ -46,4 +42,6 @@
     height 120px
     width 100%
     overflow hidden
+    .ts-img
+      width 100%
 </style>
