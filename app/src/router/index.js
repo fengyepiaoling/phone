@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 // page
-import HOME from '@/page/home/index.vue'
+import home from '@/page/home/index.vue'
+import albumtemplate from '@/page/albumtemplate/index.vue'
 
 Vue.use(Router)
 
@@ -10,7 +11,11 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: HOME
+      component: home
+    },
+    {
+      path: '/albumtemplate',
+      component: albumtemplate
     }
   ]
 })

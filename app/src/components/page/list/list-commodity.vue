@@ -6,7 +6,7 @@
       </span>
     </div>
     <div class="ts-content">
-      <div class="ts-item">
+      <div class="ts-item" @click="goto">
         <div class="ts-img"><img src="@/_cache/home/2018-04-02_204306.png"/></div>
         <div class="ts-msg-group">
           <span class="ts-text">十二寸基础款水晶册</span>
@@ -18,7 +18,7 @@
           </span>
         </div>
       </div>
-      <div class="ts-item">
+      <div class="ts-item" @click="goto">
         <div class="ts-img"><img src="@/_cache/home/2018-04-02_204306.png"/></div>
         <div class="ts-msg-group">
           <span class="ts-text">十二寸基础款水晶册</span>
@@ -30,7 +30,7 @@
           </span>
         </div>
       </div>
-      <div class="ts-item">
+      <div class="ts-item" @click="goto">
         <div class="ts-img"><img src="@/_cache/home/2018-04-02_204306.png"/></div>
         <div class="ts-msg-group">
           <span class="ts-text">十二寸基础款水晶册</span>
@@ -42,7 +42,7 @@
           </span>
         </div>
       </div>
-      <div class="ts-item">
+      <div class="ts-item" @click="goto">
         <div class="ts-img"><img src="@/_cache/home/2018-04-02_204306.png"/></div>
         <div class="ts-msg-group">
           <span class="ts-text">十二寸基础款水晶册</span>
@@ -54,7 +54,7 @@
           </span>
         </div>
       </div>
-      <div class="ts-item">
+      <div class="ts-item" @click="goto">
         <div class="ts-img"><img src="@/_cache/home/2018-04-02_204306.png"/></div>
         <div class="ts-msg-group">
           <span class="ts-text">十二寸基础款水晶册</span>
@@ -66,7 +66,7 @@
           </span>
         </div>
       </div>
-      <div class="ts-item">
+      <div class="ts-item" @click="goto">
         <div class="ts-img"><img src="@/_cache/home/2018-04-02_204306.png"/></div>
         <div class="ts-msg-group">
           <span class="ts-text">十二寸基础款水晶册</span>
@@ -78,7 +78,7 @@
           </span>
         </div>
       </div>
-      <div class="ts-item">
+      <div class="ts-item" @click="goto">
         <div class="ts-img"><img src="@/_cache/home/2018-04-02_204306.png"/></div>
         <div class="ts-msg-group">
           <span class="ts-text">十二寸基础款水晶册</span>
@@ -90,7 +90,7 @@
           </span>
         </div>
       </div>
-      <div class="ts-item">
+      <div class="ts-item" @click="goto">
         <div class="ts-img"><img src="@/_cache/home/2018-04-02_204306.png"/></div>
         <div class="ts-msg-group">
           <span class="ts-text">十二寸基础款水晶册</span>
@@ -115,6 +115,9 @@
       }
     },
     methods: {
+      goto () {
+        this.$router.push('/albumtemplate')
+      }
     }
   }
 </script>
@@ -133,14 +136,13 @@
     .ts-item
       border $c-row-line
       box-shadow $b-shadow
-      padding 10px
       &~.ts-item
         margin-top 20px
       .ts-img
         img
           width 100%
       .ts-msg-group
-        margin-top 10px
+        padding 10px
         font-size $f-large-xx
         &>span
           display block
